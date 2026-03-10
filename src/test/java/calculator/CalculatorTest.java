@@ -30,6 +30,16 @@ public class CalculatorTest {
         double result = calculator.divide(10, 5);
         assertEquals(2.0, result);
     }
+    @Test
+    void shouldAddNegativeNumbers() {
+        double result = calculator.add(-4, -6);
+        assertEquals(-10.0, result);
+    }
+    @Test
+    void shouldAddNumberAndZero() {
+        double result = calculator.add(7, 0);
+        assertEquals(7.0, result);
+    }
 
     @Test
     void shouldThrowExceptionWhenDividingByZero() {
