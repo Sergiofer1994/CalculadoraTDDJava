@@ -61,6 +61,7 @@ public class CalculatorTest {
         assertEquals(1.0, result);
     }
 
+
     @Test
     void shouldThrowExceptionWhenDividingByZero() {
         assertThrows(IllegalArgumentException.class, () -> {
