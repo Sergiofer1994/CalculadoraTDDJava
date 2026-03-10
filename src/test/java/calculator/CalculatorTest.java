@@ -40,6 +40,26 @@ public class CalculatorTest {
         double result = calculator.add(7, 0);
         assertEquals(7.0, result);
     }
+    @Test
+    void shouldMultiplyByZero() {
+        double result = calculator.multiply(8, 0);
+        assertEquals(0.0, result);
+    }
+    @Test
+    void shouldDivideNegativeNumbers() {
+        double result = calculator.divide(-10, 5);
+        assertEquals(-2.0, result);
+    }
+    @Test
+    void shouldDivideNumberByItself() {
+        double result = calculator.divide(9, 9);
+        assertEquals(1.0, result);
+    }
+    @Test
+    void shouldDivideNumberByItself() {
+        double result = calculator.divide(9, 9);
+        assertEquals(1.0, result);
+    }
 
     @Test
     void shouldThrowExceptionWhenDividingByZero() {
